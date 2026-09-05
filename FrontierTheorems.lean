@@ -1,3 +1,4 @@
 import FrontierTheorems.Samuelson
 import FrontierTheorems.HammersleyChapmanRobbins
 import FrontierTheorems.Pearson
+import FrontierTheorems.Submodular.Applications

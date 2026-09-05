@@ -1,5 +1,5 @@
 name = "frontierTheorems"
-version = "0.1.0"
+version = "2.0.0"
 defaultTargets = ["FrontierTheorems"]
 
 [[require]]
@@ -9,3 +9,4 @@ rev = "5450b53e5ddc75d46418fabb605edbf36bd0beb6"
 
 [[lean_lib]]
 name = "FrontierTheorems"
+moreLeanArgs = ["-DwarningAsError=true"]

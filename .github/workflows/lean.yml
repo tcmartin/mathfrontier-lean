@@ -15,6 +15,6 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Download compiled mathlib dependencies
-        run: lake exe cache get Mathlib.Analysis.MeanInequalities Mathlib.Algebra.Order.Chebyshev Mathlib.Tactic
+        run: lake exe cache get Mathlib.Analysis.MeanInequalities Mathlib.Algebra.Order.Chebyshev Mathlib.Analysis.SpecialFunctions.Exp Mathlib.Data.Finset.Max Mathlib.Algebra.Order.BigOperators.Group.Finset Mathlib.Tactic
       - name: Compile proofs, examples, and axiom audit
         run: ./scripts/verify.sh

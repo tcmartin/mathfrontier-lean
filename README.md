@@ -1,6 +1,53 @@
-# Classical statistical inequalities in Lean 4
+# Classical theorems in Lean 4
 
-Kernel-checked proofs of three established statistical inequalities:
+Kernel-checked proofs of the **Nemhauser–Wolsey–Fisher greedy approximation theorem**,
+its submodularity and maximum-coverage dependencies, and three statistical inequalities.
+
+## Flagship: greedy submodular maximization
+
+For a finite ground set, a normalized monotone submodular real-valued objective `f`,
+and an integer budget `k > 0`, the greedy set `G_k` satisfies
+
+```text
+|G_k| ≤ k
+f(G_k) ≥ [1 − (1 − 1/k)^k] f(O) ≥ (1 − exp(−1)) f(O)
+```
+
+Here `O` maximizes `f` among all sets of cardinality at most `k`. The formalization
+constructs a maximum-marginal greedy choice, proves feasibility, establishes the
+inequality against **every feasible comparator**, and proves an optimum exists.
+It includes the equivalence of lattice submodularity and diminishing returns,
+the telescoping gain bound, geometric residual decay, the exact finite-budget
+factor, and the real-exponential corollary. Weighted and unweighted maximum
+coverage discharge the objective assumptions from finite set unions.
+
+The finite factor is 1 at budget 1, 3/4 at budget 2, and 19/27 at budget 3.
+The uniform factor `1 − exp(−1)` is approximately 0.63212.
+The construction uses classical choice over real-valued marginal gains; this is
+a mathematical algorithm definition, not an executable optimization package.
+It remains unchanged after exhausting the ground set. Zero budget has a separate
+exact statement. No assumption `k ≤ |E|` or nonempty ground set is required.
+
+| Module | Contribution |
+| --- | --- |
+| [Basic](FrontierTheorems/Submodular/Basic.lean) | Lattice submodularity, diminishing returns, telescoping gains |
+| [Greedy](FrontierTheorems/Submodular/Greedy.lean) | Maximum-marginal selection, feasibility, monotone value |
+| [Approximation](FrontierTheorems/Submodular/Approximation.lean) | Residual recurrence, finite and exponential factors, optimum existence |
+| [Coverage](FrontierTheorems/Submodular/Coverage.lean) | Weighted unions and modular sums are submodular; nonnegative weights give monotonicity |
+| [Applications](FrontierTheorems/Submodular/Applications.lean) | Weighted/unweighted maximum coverage and boundary budgets |
+
+Main declaration: `FrontierTheorems.Submodular.nemhauser_wolsey_fisher`.
+See the [proof dependency map](docs/PROOF_MAP.md) and
+[dated prior-art review](docs/submodular-prior-art.md).
+The review found no generic Lean NWF theorem in the inspected sources; it does
+not establish worldwide priority.
+
+Source: G. L. Nemhauser, L. A. Wolsey, M. L. Fisher,
+[An analysis of approximations for maximizing submodular set functions—I](https://doi.org/10.1007/BF01588971),
+*Mathematical Programming* 14 (1978), 265–294.
+The formal statement covers cardinality constraints, not general knapsack or matroid constraints.
+
+## Statistical inequalities
 
 | Result | Formal scope | File |
 | --- | --- | --- |
@@ -26,11 +73,11 @@ lake exe cache get
 
 `lean-toolchain` pins Lean **4.30.0-rc2**. `lakefile.toml` and the committed
 `lake-manifest.json` pin mathlib at **5450b53e5ddc75d46418fabb605edbf36bd0beb6**
-and its transitive dependencies. The public theorem files rely on mathlib's
-finite-sum and Cauchy–Schwarz infrastructure.
+and its transitive dependencies. The proofs use mathlib's finite-set, finite-sum,
+Cauchy–Schwarz, order, and real-exponential infrastructure.
 
 The verification script rebuilds the library, checks concrete edge cases, and
-prints the axioms of every theorem in these modules. The allowed foundational
+prints the axioms of every public theorem and definition throughout these modules. The allowed foundational
 axioms are Lean's standard `propext`, `Classical.choice`, and `Quot.sound`.
 It rejects additional axioms, admitted proofs, and native computation as proof evidence.
 Compiler verification establishes the formal statements; the explanations below

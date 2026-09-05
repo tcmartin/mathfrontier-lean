@@ -16,12 +16,14 @@ for name, axioms in found.items():
     if extra:
         raise SystemExit(f"Unexpected axioms in {name}: {sorted(extra)}")
 
-for path in Path("FrontierTheorems").glob("*.lean"):
+for path in Path("FrontierTheorems").rglob("*.lean"):
     source = path.read_text()
-    # Public sources are kept simple: no quoted theorem names or nested namespaces.
+    # Public files open their namespace prefixes before their declarations.
     namespaces = re.findall(r"^namespace (\S+)$", source, re.M)
     prefix = ".".join(namespaces)
-    names = re.findall(r"^(?:theorem|lemma) (\S+)", source, re.M)
+    if not namespaces:
+        raise SystemExit(f"Missing namespace in {path}")
+    names = re.findall(r"^(?:@\[[^\]]*\]\s*)?(?:(?:noncomputable|private)\s+)?(?:theorem|lemma|def) (\S+)", source, re.M)
     missing = {f"{prefix}.{name}" for name in names} - expected
     if missing:
         raise SystemExit(f"Unaudited declarations in {path}: {sorted(missing)}")

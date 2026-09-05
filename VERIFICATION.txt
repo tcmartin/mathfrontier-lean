@@ -1,14 +1,98 @@
 Lake version 5.0.0-src+3dc1a08 (Lean version 4.30.0-rc2)
 Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)
-Build completed successfully (3303 jobs).
+Build completed successfully (3308 jobs).
+'FrontierTheorems.HCR.expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.HCR.variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.HCR.chiSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.HCR.expectation_shift_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.HCR.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.centralMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.central_moment_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.standardized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Samuelson.sampleMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Samuelson.populationVariance' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FrontierTheorems.Samuelson.sum_deviation_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FrontierTheorems.Samuelson.sum_deviation_erase_eq_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FrontierTheorems.Samuelson.sq_deviation_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FrontierTheorems.Samuelson.populationVariance_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 'FrontierTheorems.Samuelson.abs_deviation_le_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FrontierTheorems.HCR.expectation_shift_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FrontierTheorems.HCR.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FrontierTheorems.Pearson.centered' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FrontierTheorems.Pearson.central_moment_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
-'FrontierTheorems.Pearson.standardized' depends on axioms: [propext, Classical.choice, Quot.sound]
-PASS: 10 declarations audited; only standard Lean axioms.
+'FrontierTheorems.Submodular.weighted_maximum_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weighted_maximum_coverage_one_sub_inv_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FrontierTheorems.Submodular.maximum_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.maximum_coverage_one_sub_inv_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_zero_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_one_budget_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.one_step_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_residual_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.residual_factor_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_one_sub_inv_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.exists_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.nemhauser_wolsey_fisher' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.IsSubmodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.HasDiminishingReturns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.marginal_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.marginal_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.IsSubmodular.diminishingReturns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.HasDiminishingReturns.union_le_sum_marginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FrontierTheorems.Submodular.HasDiminishingReturns.isSubmodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FrontierTheorems.Submodular.isSubmodular_iff_diminishingReturns' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.biUnion_inter_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_isSubmodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_submodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedCoverage_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage_eq_weightedCoverage_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FrontierTheorems.Submodular.coverage_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage_isSubmodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.coverage_submodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum_isSubmodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.weightedSum_submodular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedyStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedyStep_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.subset_greedyStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.card_greedyStep_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.card_greedy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.card_greedyStep_eq_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.card_greedy_eq_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_eq_univ_of_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedyStep_gain_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.marginal_le_greedyStep_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Submodular.greedy_value_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS: 79 declarations audited; only standard Lean axioms.
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.264s
+
+OK
