@@ -1,0 +1,14 @@
+Lake version 5.0.0-src+3dc1a08 (Lean version 4.30.0-rc2)
+Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)
+Build completed successfully (3303 jobs).
+'FrontierTheorems.Samuelson.sum_deviation_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Samuelson.sum_deviation_erase_eq_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Samuelson.sq_deviation_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Samuelson.populationVariance_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Samuelson.abs_deviation_le_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.HCR.expectation_shift_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.HCR.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.central_moment_inequality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FrontierTheorems.Pearson.standardized' depends on axioms: [propext, Classical.choice, Quot.sound]
+PASS: 10 declarations audited; only standard Lean axioms.
